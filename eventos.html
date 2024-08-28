@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>eventos</title>
+    <link rel="stylesheet" href="/_css/eventos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script>
+   function val_ingresso() {
+        var qtd = parseInt(document.getElementById('cQuant'). value);
+        tot = qtd * 25;
+        document.getElementById('tVal').value = tot;
+    } 
+</script>
+</head>
+
+<body>
+    <section class="corp0">
+        <article class="lavagem">
+            <header>
+                <h1>Feiras</h1>
+                <h2>Exposições Automotivas</h2>
+            </header>
+            <p>Uma oportunidade única de apresentar nossos produtos e serviços a um público amplo, incluindo
+                fabricantes de automóveis, distribuidores,
+                mecânicos e entusiastas do setor. Se destaca as últimas inovações em peças e tecnologias automotivas.</p>
+            <img src="/_imagens/exposicaoautomotiva.PNG" />
+        </article>
+    </section>
+
+    <section class="corpo">
+        <article class="treino">
+            <header>
+                <h1>Treinamentos</h1>
+                <h2>Workshops Técnicos</h2>
+            </header>
+            <p>Esses eventos incluem instruções sobre a instalação correta de peças, diagnóstico de problemas
+                automotivos e o uso eficaz de ferramentas de diagnóstico.</p>
+            <img src="/_imagens/Imagen01.png" alt="foto01" />
+        </article>
+    </section>
+
+    <section class="corpo">
+        <article class="lancamentos">
+            <header>
+                <h1>Lançamentos</h1>
+                <h2>Novos Produtos</h2>
+            </header>
+            <p>Oferecem uma oportunidade para testar, demonstrar o uso e receber feedbacks dos clientes e ajustar os
+                produtos conforme necessário.</p>
+            <img src="/_imagens/Imagen02.png" width="990" />
+        </article>
+    </section>
+    <section class="corpo" id="principal">
+        <article class="social">
+            <header>
+                <h1>Responsabilidade</h1>
+                <h2>Programas Sociais e Corporativos</h2>
+            </header>
+            <p>Uma manutenção adequada previne problemas no trânsito, contribui para a preservação do meio ambiente,
+                tornando-a fundamental para um funcionamento confiável e responsável do automóvel, desde já, a Stock
+                AutoPeças apoia a comunidade local ou causas sociais.</p>
+            <img src="/_imagens/social.jpg" />
+        </article>
+    </section>
+    <aside id="form">
+        <form method="post" id="fIngre" action="malto:rogersoubrand1a@gmail.com" oninput="val_ingresso()">
+            <fieldset id="usuario">
+                <legend id="inicio">Quero Participar dos Eventos</legend>
+                <p><label form="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="25" maxlength="30"
+                        placeholder="Nome Completo" required /><span class="validity"></span> </p>
+                <p><label form="cGen">Gênero:</label> <select name="tGen" id="cGen">
+                        <option value-="fem">Feminino</option>
+                        <option value="masc">Masculino</option>
+                        <option value="masc">Prefiro não falar</option>
+                    </select>
+                </p>
+                <p><label form="cData">Data de Nascimento:</label> <input type="date" name="tData" id="cData"
+                        mim="1960-09-06" max="2005-09-06" required placeholder="Sua Data de nascimento" /><span
+                        class="validity"></span></p>
+                <p><label form="cEmail">E-mail:</label> <input type="email" name="tEmail" id="cEmail" size="20"
+                        maxlength="30" placeholder="Melhor E-mail" /></p>
+                <p><label form="cNum">Número:</label> <input type="tel" name="tNum" id="cNum" size="20" minlength="9"
+                        maxlength="19" placeholder="Melhor Número" required /><span class="validity"></span></p>
+            </fieldset>
+            <fieldset id="ingresso">
+                <legend>Ingresso(s)</legend>
+                <p><label form="cQuant">Quantidade:</label><input type="number" name="cQuant" id="cQuant" min="0" max="99999" required /><span class="validity"></span></p>
+                <p><label form="cVal">valor:</label><input type="text" name="tVal" id="tVal" min="1" max="99999" placeholder=""    readonly /></p>
+                <p><label form="cOk"><input type="checkbox" name="tOk" id="cOk" required/><a href="https://www.significados.com.br/ciente/" target="_blank">Aceitos Todos os Termos</a></label></p>
+            </fieldset>
+            <input type="submit" value="Prosseguir" />
+        </form>
+    </aside>
+
+</body>
+
+</html>

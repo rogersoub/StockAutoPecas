@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #1e1c2a;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    background-color: #d63a25;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #d63a25;
+}
+
+body {
+    color: var(--dark);
+    background: var(--white);
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 30px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: relative
+
+}
+
+.navegacao .logo {
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--dark);
+}
+
+.navegacao ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navegacao ul li .nvi{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navegacao ul li .nvi:hover{
+    color: var(--red);
+}
+
+.navegacao i{
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.9rem;
+    transition: all 0.5s;
+}
+
+.navegacao i:hover{
+    color: var(--red);
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3) {
+    background: var(--red);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+.home-btn {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.home-btn:hover {
+    background: #fc4c35;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid black;
+}
+
+footer#rodape p{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 12pt;
+    }
+
+
+footer#rodape a {
+    color: #1e1c2a;
+}
+
+aside#lateral {
+    display: block;
+    width: 500px;
+    float: right;
+    background-color: #dddddd;
+    padding: 100px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+section#corpo {
+    padding: 100px;
+}
+
+figure.produtos {
+    border: 8px solid rgb(241, 238, 238);
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.produtos img {
+    width: 10%;
+    height: 10%;
+}
+
+figure.produtos figcaption {
+    top: 0px;
+    padding: 10px;
+    background-color: rgba(236, 219, 219, 0.5);
+}
+
+.album {
+    width: 1860;
+    margin: 0;
+    padding: 130px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.album li {
+    float:left;
+    width: 280px;
+    height: 280px;
+    margin: 17px;
+    box-shadow: 0 0.1rem 0.5rem rgb(80, 79, 79);
+    border-radius: 7px;
+    -webkit-transition:all .4s ease-in;
+    
+}
+
+
+
+.Foto01 {
+
+    background: url(/_imagens/Cobreq.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+
+.Foto02 {
+
+    background: url(/_imagens/Fras-Le.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto03 {
+
+    background: url(/_imagens/Ferodo.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+
+.Foto04 {
+
+    background: url(/_imagens/TRW.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto05 {
+
+    background: url(/_imagens/Bosh.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto06 {
+
+    background: url(/_imagens/Escape-Scapex.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto07 {
+
+    background: url(/_imagens/Escape-Mastra.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto08 {
+
+    background: url(/_imagens/Escape-Gemoto.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto09 {
+
+    background: url(/_imagens/Escape-Prisma.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto10 {
+
+    background: url(/_imagens/Escape-Alpha.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto11 {
+
+    background: url(/_imagens/Difusor-ZF.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto12 {
+
+    background: url(/_imagens/Difusor-ZP.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto13 {
+
+    background: url(/_imagens/Difusor-Shutt.PNG) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto14 {
+
+    background: url(/_imagens/difusoroestesom.webp) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto15 {
+
+    background: url(/_imagens/capdifusores.webp) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto16 {
+
+    background: url(/_imagens/frei2.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto17 {
+
+    background: url(/_imagens/freioele1.webp) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto18 {
+
+    background: url(/_imagens/pneuitaro.webp) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto19 {
+
+    background: url(/_imagens/pneupirelli.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto20 {
+
+    background: url(/_imagens/pneuwestlake.webp) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto21 {
+
+    background: url(/_imagens/pneucontinental.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto22 {
+
+    background: url(/_imagens/pneugoodyear.webp) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto23 {
+    background: url(/_imagens/motorr.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: white;
+
+}
+
+.Foto24 {
+    background: url(/_imagens/motor.peças.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: white;
+}
+
+.s{
+    opacity: 0;
+    color: #000000;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 12pt;
+    line-height: 590px;
+    padding: 5px;
+}
+
+.s {
+    opacity: 1;
+}
+.iLogin  {
+	background-color: var(--red);
+	padding: 12px;
+	border-radius: 10px;
+	color: white;
+}
+.iLogin:hover {
+	background-color:  rgb(243, 65, 65);
+	color: white;
+}
+.LG {
+	color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+/*footer*/
+.c166 {
+    display: flex;
+}
+
+.um {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.dois {
+    font-size: 16px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.quatro .cinco {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.b66 {
+    font-size: 16px;
+    margin-left: 500px;
+    margin-top: -160px;
+}
+
+.c66 {
+    font-size: 16px;
+    margin-left: 800px;
+    margin-top: -110px;
+    justify-content: space-between;
+}
+
+.d66 {
+    font-size: 16px;
+    margin-left: 1100px;
+    margin-top: -200px;
+}
+
+.c4 {
+    border-top: 1px solid var(--dark);
+    margin-bottom: 30px;
+}
+
+.rodape {
+    margin-left: 300px;
+    margin-right: 150px;
+}
+
+
+/* titulo */
+
+.t1 {
+    margin-left: 15px;
+}
+
+.t2 {
+    margin-left: 75px;
+}
+
+.t3 {
+    margin-left: 35px;
+}
+.cor {
+    color: #000000;
+    transition: all 0.5s;
+}
+
+.cor:hover {
+    color: #d63a25;
+}

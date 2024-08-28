@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+list-style: none;
+text-decoration: none;
+}
+:root{
+    --red:#d63a25;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 30px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: relative;
+
+}
+.navegacao .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--dark);
+}
+.navegacao ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navegacao ul li .nvi{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navegacao ul li .nvi:hover{
+    color: var(--red);
+}
+.navegacao i{
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.9rem;
+    transition: all 0.5s;
+}
+
+.navegacao i:hover{
+    color: var(--red);
+}
+
+.menu{
+    cursor: pointer;
+    background-color: #000000;
+}
+.menu .iUser2{
+    display: block;
+    width: 28px;
+    height: 3px;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--red);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home-text{
+    max-width: 37rem;
+}
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #fc4c35;
+}
+.home-img img{
+    width: 100%;
+}
+
+/*Album de imagens*/
+.album{
+    width: 1860;
+    margin: 0;
+    padding: 130px;
+    overflow: hidden;
+    list-style: none;
+}
+.album li{
+    float:left;
+    width: 280px;
+    height: 280px;
+    margin: 17px;
+    box-shadow: 0 0.1rem 0.5rem rgb(80, 79, 79);
+    border-radius: 7px;
+    -webkit-transition:all .4s ease-in;
+}
+
+
+.Foto01 {
+
+    background: url('/_imagens/MicrosoftTeams-image\ \(1\).png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto02 {
+
+    background: url('/_imagens/MicrosoftTeams-image\ \(2\).png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto03 {
+
+    background: url('/_imagens/MicrosoftTeams-image\ \(3\).png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+.Foto04 {
+
+    background: url('/_imagens/MicrosoftTeams-image\ \(4\).png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.Foto05 {
+
+    background: url('/_imagens/MicrosoftTeams-image.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff;
+}
+
+
+.s{
+    opacity: 0;
+    color: #000000;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 13pt;
+    line-height: 610px;
+    padding: 5px;
+}
+.s {
+    opacity: 1;
+}
+.catalogo {
+    text-align: center;
+}
+/*Configuração do Video na Pagina*/
+.video01{
+display: block;
+position:relative;
+left: 475px;
+top: 20px;
+width: 900px;
+margin-bottom: 40px;
+
+border-radius: 7px;
+box-shadow: 0 0.1rem 0.5rem rgb(136, 81, 81);
+}
+
+/*footer*/
+.c166 {
+    display: flex;
+}
+
+.um {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.dois {
+    font-size: 16px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.quatro .cinco {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.b66 {
+    font-size: 16px;
+    margin-left: 500px;
+    margin-top: -160px;
+}
+
+.c66 {
+    font-size: 16px;
+    margin-left: 800px;
+    margin-top: -110px;
+    justify-content: space-between;
+}
+
+.d66 {
+    font-size: 16px;
+    margin-left: 1100px;
+    margin-top: -200px;
+}
+
+.c4 {
+    padding: 10px;
+    background-color: #5f170d;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.c44 {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.but4 {
+    background-color: var(--red);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.but4:hover {
+    background-color:  rgb(243, 65, 65);
+}
+
+.rodape {
+    margin-left: 300px;
+    margin-right: 150px;
+}
+
+
+/* titulo */
+
+.t1 {
+    margin-left: 15px;
+}
+
+.t2 {
+    margin-left: 75px;
+}
+
+.t3 {
+    margin-left: 35px;
+}
+.cor {
+    color: #000000;
+    transition: all 0.5s;
+}
+
+.cor:hover {
+    color: #d63a25;
+}
